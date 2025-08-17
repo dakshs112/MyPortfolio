@@ -53,6 +53,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               className="bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground font-mono px-8 py-4 transition-all duration-300"
+              onClick={() => window.open('https://daksh-backend-developer.tiiny.site/', '_blank')}
             >
               <Download className="mr-2 w-5 h-5" />
               Download CV
