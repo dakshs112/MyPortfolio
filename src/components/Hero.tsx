@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-mono font-bold mb-6 text-gradient">
-            Alex Thompson
+            Daksh Sharma
           </h1>
           
           <div className="text-xl md:text-2xl text-muted-foreground mb-4 font-mono">

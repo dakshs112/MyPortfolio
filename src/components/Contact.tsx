@@ -35,19 +35,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6 text-primary" />,
       label: "Email",
-      value: "alex.thompson@example.com",
-      link: "mailto:alex.thompson@example.com"
+      value: "dakshs112@gmail.com",
+      link: "mailto:dakshs112@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6 text-secondary" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+91 8088263651",
+      link: "tel:+918088263651"
     },
     {
       icon: <MapPin className="w-6 h-6 text-accent" />,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Bengaluru, India",
       link: null
     }
   ];
@@ -56,13 +56,13 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      url: "https://github.com/alexthompson",
+      url: "https://github.com/dakshs112",
       color: "text-foreground hover:text-primary"
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/alexthompson",
+      url: "https://www.linkedin.com/in/dakshsharma112",
       color: "text-foreground hover:text-secondary"
     },
     {
