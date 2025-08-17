@@ -83,12 +83,6 @@ const Footer = () => {
                 © {currentYear} Daksh Sharma. All rights reserved.
               </p>
               
-              <div className="flex items-center text-sm text-muted-foreground">
-                <span className="mr-1">Made with</span>
-                <Heart className="w-4 h-4 text-red-500 mx-1" />
-                <span className="ml-1">and lots of</span>
-                <span className="ml-1 font-mono text-primary">{"{ coffee }"}</span>
-              </div>
             </div>
           </div>
         </div>
