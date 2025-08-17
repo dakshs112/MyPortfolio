@@ -44,7 +44,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="fade-in">
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-                I'm a passionate backend developer with a passion for building 
+                I'm a passionate backend developer with over 3 years of experience building 
                 scalable web applications. I specialize in Node.js ecosystem and love solving 
                 complex problems through clean, efficient code.
               </p>
