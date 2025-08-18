@@ -21,8 +21,8 @@ const Projects = () => {
       title: "Task Management API",
       description: "A robust project management API with team collaboration features, task assignments, deadlines, and progress tracking. Includes role-based authentication and permissions.",
       tech: ["Express.js", "MongoDB", "Node.js", "JWT", "Multer"],
-      github: "https://github.com",
-      demo: "https://tasks-demo.com"
+      github: "https://github.com/dakshs112/Task-Master",
+      demo: "https://taskbuddy-pw7o.onrender.com"
     },
     {
       title: "Weather Data Aggregator",

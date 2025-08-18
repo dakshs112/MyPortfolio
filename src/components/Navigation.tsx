@@ -44,7 +44,7 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="text-xl font-mono font-bold text-gradient hover:scale-105 transition-transform"
           >
-            AT
+            DS
           </button>
 
           {/* Desktop Navigation */}
