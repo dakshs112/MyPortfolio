@@ -1,6 +1,6 @@
 import { ArrowRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-bg.jpg';
+import ThreeBackground from './ThreeBackground';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -8,23 +8,12 @@ const Hero = () => {
   };
 
   return (
-    <section 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(32, 36, 57, 0.9), rgba(32, 36, 57, 0.9)), url(${heroImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      {/* Enhanced animated background elements */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="particle absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full" style={{ animationDelay: '0s' }}></div>
-        <div className="particle absolute top-1/3 right-1/3 w-1 h-1 bg-secondary rounded-full" style={{ animationDelay: '1s' }}></div>
-        <div className="particle absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-accent rounded-full" style={{ animationDelay: '2s' }}></div>
-        <div className="particle absolute top-2/3 right-1/4 w-1 h-1 bg-primary rounded-full" style={{ animationDelay: '3s' }}></div>
-        <div className="particle absolute top-1/2 left-1/6 w-1.5 h-1.5 bg-secondary rounded-full" style={{ animationDelay: '4s' }}></div>
-        <div className="particle absolute bottom-1/3 right-1/2 w-1 h-1 bg-accent rounded-full" style={{ animationDelay: '5s' }}></div>
-      </div>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background/95 to-muted/20">
+      {/* 3D Background */}
+      <ThreeBackground />
+      
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]"></div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in">
@@ -65,7 +54,7 @@ const Hero = () => {
         </div>
         
         {/* Enhanced Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer pulse-glow">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer pulse-glow z-10">
           <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center hover:border-secondary transition-colors duration-300">
             <div className="w-1 h-3 bg-primary rounded-full mt-2"></div>
           </div>

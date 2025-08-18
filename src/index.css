@@ -278,31 +278,6 @@
     50% { background-position: 100% 50%; }
   }
   
-  /* Floating particles animation */
-  .particle {
-    @apply absolute rounded-full opacity-60;
-    animation: float-particle 6s ease-in-out infinite;
-  }
-  
-  @keyframes float-particle {
-    0%, 100% { 
-      transform: translateY(0px) translateX(0px) rotate(0deg);
-      opacity: 0.6;
-    }
-    25% { 
-      transform: translateY(-20px) translateX(10px) rotate(90deg);
-      opacity: 1;
-    }
-    50% { 
-      transform: translateY(-10px) translateX(-10px) rotate(180deg);
-      opacity: 0.8;
-    }
-    75% { 
-      transform: translateY(-30px) translateX(5px) rotate(270deg);
-      opacity: 1;
-    }
-  }
-  
   /* Pulse effect for interactive elements */
   .pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
