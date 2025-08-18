@@ -16,8 +16,17 @@ export const useScrollAnimation = () => {
       }
     );
 
-    const animatedElements = document.querySelectorAll('.fade-in');
-    animatedElements.forEach((el) => observer.observe(el));
+    // Observe all animation classes
+    const animationClasses = ['.fade-in', '.slide-in-left', '.slide-in-right'];
+    const animatedElements: Element[] = [];
+    
+    animationClasses.forEach(className => {
+      const elements = document.querySelectorAll(className);
+      elements.forEach(el => {
+        animatedElements.push(el);
+        observer.observe(el);
+      });
+    });
 
     return () => {
       animatedElements.forEach((el) => observer.unobserve(el));
