@@ -7,8 +7,8 @@ const Projects = () => {
       title: "E-Commerce API",
       description: "A comprehensive RESTful API for an e-commerce platform with user authentication, product management, shopping cart, and order processing. Built with Node.js, Express, and MongoDB.",
       tech: ["Node.js", "Express", "MongoDB", "JWT", "Stripe API"],
-      github: "https://github.com",
-      demo: "https://api-demo.com"
+      github: "https://github.com/dakshs112/Product-catalogue-and-Orders-E-Commerce-",
+      demo: "product-catalogue-and-order-git-563827-dakshs112-1029s-projects.vercel.app"
     },
     {
       title: "Real-time Chat System",
