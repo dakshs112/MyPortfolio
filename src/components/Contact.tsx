@@ -62,13 +62,13 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      url: "https://www.linkedin.com/in/dakshsharma112",
+      url: "https://www.linkedin.com/in/dakshsharma112/",
       color: "text-foreground hover:text-secondary"
     },
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      url: "mailto:alex.thompson@example.com",
+      url: "mailto:dakshs112@gmail.com",
       color: "text-foreground hover:text-accent"
     }
   ];

@@ -7,8 +7,8 @@ const Projects = () => {
       title: "E-Commerce API",
       description: "A comprehensive RESTful API for an e-commerce platform with user authentication, product management, shopping cart, and order processing. Built with Node.js, Express, and MongoDB.",
       tech: ["Node.js", "Express", "MongoDB", "JWT", "Stripe API"],
-      github: "https://github.com",
-      demo: "https://api-demo.com"
+      github: "https://github.com/dakshs112/Product-catalogue-and-Orders-E-Commerce-",
+      demo: "product-catalogue-and-order-git-563827-dakshs112-1029s-projects.vercel.app"
     },
     {
       title: "Real-time Chat System",
@@ -21,8 +21,8 @@ const Projects = () => {
       title: "Task Management API",
       description: "A robust project management API with team collaboration features, task assignments, deadlines, and progress tracking. Includes role-based authentication and permissions.",
       tech: ["Express.js", "MongoDB", "Node.js", "JWT", "Multer"],
-      github: "https://github.com",
-      demo: "https://tasks-demo.com"
+      github: "https://github.com/dakshs112/Task-Master",
+      demo: "https://taskbuddy-pw7o.onrender.com"
     },
     {
       title: "Weather Data Aggregator",
@@ -57,7 +57,7 @@ const Projects = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <div key={index} className="project-card fade-in">
+              <div key={index} className="project-card fade-in" style={{ animationDelay: `${index * 150}ms` }}>
                 <div className="mb-4">
                   <h3 className="text-xl font-mono font-semibold text-foreground mb-3">
                     {project.title}
@@ -81,7 +81,7 @@ const Projects = () => {
                   <Button 
                     size="sm" 
                     variant="outline"
-                    className="flex-1 bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                    className="flex-1 magnetic bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[var(--glow-primary)] transition-all duration-300"
                     asChild
                   >
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -91,7 +91,7 @@ const Projects = () => {
                   </Button>
                   <Button 
                     size="sm"
-                    className="flex-1 bg-secondary hover:bg-secondary/80"
+                    className="flex-1 magnetic bg-secondary hover:bg-secondary/80 hover:shadow-[var(--glow-secondary)] transition-all duration-300"
                     asChild
                   >
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">

@@ -11,7 +11,7 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="md:col-span-1">
               <h3 className="text-2xl font-mono font-bold text-gradient mb-4">
-                Alex Thompson
+                Daksh Sharma
               </h3>
               <p className="text-muted-foreground leading-relaxed">
                 Backend Developer passionate about building scalable, efficient, 
@@ -45,7 +45,7 @@ const Footer = () => {
               </h4>
               <div className="flex space-x-4 mb-4">
                 <a
-                  href="https://github.com/alexthompson"
+                  href="https://github.com/dakshs112"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-lg bg-muted/30 hover:bg-muted/50 text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
@@ -54,7 +54,7 @@ const Footer = () => {
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/alexthompson"
+                  href="https://www.linkedin.com/in/dakshsharma112/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-lg bg-muted/30 hover:bg-muted/50 text-foreground hover:text-secondary transition-all duration-300 hover:scale-110"
@@ -63,7 +63,7 @@ const Footer = () => {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="mailto:alex.thompson@example.com"
+                  href="mailto:dakshs112@gmail.com"
                   className="p-3 rounded-lg bg-muted/30 hover:bg-muted/50 text-foreground hover:text-accent transition-all duration-300 hover:scale-110"
                   aria-label="Email"
                 >
@@ -80,15 +80,9 @@ const Footer = () => {
           <div className="pt-8 border-t border-border">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-sm text-muted-foreground font-mono mb-4 md:mb-0">
-                © {currentYear} Alex Thompson. All rights reserved.
+                © {currentYear} Daksh Sharma. All rights reserved.
               </p>
               
-              <div className="flex items-center text-sm text-muted-foreground">
-                <span className="mr-1">Made with</span>
-                <Heart className="w-4 h-4 text-red-500 mx-1" />
-                <span className="ml-1">and lots of</span>
-                <span className="ml-1 font-mono text-primary">{"{ coffee }"}</span>
-              </div>
             </div>
           </div>
         </div>

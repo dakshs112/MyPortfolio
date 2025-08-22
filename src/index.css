@@ -59,6 +59,15 @@
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-elastic: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    
+    /* Enhanced glow effects */
+    --glow-strong: 0 0 30px hsl(178 78% 57% / 0.5), 0 0 60px hsl(178 78% 57% / 0.3);
+    --glow-secondary-strong: 0 0 30px hsl(217 91% 60% / 0.5), 0 0 60px hsl(217 91% 60% / 0.3);
+    --glow-accent-strong: 0 0 30px hsl(262 83% 58% / 0.5), 0 0 60px hsl(262 83% 58% / 0.3);
+    
+    /* Particle effects */
+    --particle-glow: 0 0 10px currentColor;
 
     --sidebar-background: 0 0% 98%;
 
@@ -127,27 +136,112 @@
 }
 
 @layer components {
-  /* Hero button variant */
+  /* Enhanced Hero button with stronger effects */
   .btn-hero {
-    @apply bg-gradient-to-r from-primary to-secondary text-primary-foreground font-mono font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-[var(--glow-primary)] hover:scale-105 active:scale-95;
+    @apply bg-gradient-to-r from-primary to-secondary text-primary-foreground font-mono font-semibold px-8 py-4 rounded-lg relative overflow-hidden;
+    transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
   
-  /* Card with glow effect */
+  .btn-hero::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-secondary to-accent opacity-0 transition-opacity duration-300;
+  }
+  
+  .btn-hero:hover {
+    @apply scale-105 shadow-[var(--glow-strong)];
+    transform: translateY(-2px) scale(1.05);
+  }
+  
+  .btn-hero:hover::before {
+    @apply opacity-100;
+  }
+  
+  .btn-hero:active {
+    @apply scale-95;
+    transform: translateY(0) scale(0.95);
+  }
+  
+  /* Enhanced Card with stronger hover effects */
   .card-glow {
-    @apply bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--glow-primary)];
+    @apply bg-card border border-border rounded-xl p-6 relative overflow-hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  /* Tech badge */
+  .card-glow::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 transition-opacity duration-500;
+  }
+  
+  .card-glow:hover {
+    @apply border-primary/50 shadow-[var(--glow-primary)] -translate-y-1;
+  }
+  
+  .card-glow:hover::before {
+    @apply opacity-100;
+  }
+  
+  /* Interactive Tech badge with bounce effect */
   .tech-badge {
-    @apply bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm font-mono transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-105;
+    @apply bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm font-mono cursor-pointer relative overflow-hidden;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
-  /* Project card */
+  .tech-badge::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 transition-opacity duration-300;
+  }
+  
+  .tech-badge:hover {
+    @apply text-primary-foreground scale-110 shadow-[var(--particle-glow)];
+    transform: translateY(-2px) scale(1.1);
+  }
+  
+  .tech-badge:hover::before {
+    @apply opacity-100;
+  }
+  
+  /* Enhanced Project card with 3D effect */
   .project-card {
-    @apply bg-card border border-border rounded-xl p-6 transition-all duration-500 hover:border-secondary/50 hover:shadow-[var(--glow-secondary)] hover:-translate-y-2;
+    @apply bg-card border border-border rounded-xl p-6 relative overflow-hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
   }
   
-  /* Section fade-in animation */
+  .project-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-accent/10 opacity-0 transition-opacity duration-500;
+  }
+  
+  .project-card:hover {
+    @apply border-secondary/50 shadow-[var(--glow-secondary-strong)];
+    transform: translateY(-8px) rotateX(5deg) rotateY(5deg);
+  }
+  
+  .project-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  /* Enhanced Navigation with glassmorphism */
+  .nav-glass {
+    @apply backdrop-blur-xl bg-background/80 border-b border-border/50;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Interactive navigation links */
+  .nav-link {
+    @apply relative text-muted-foreground transition-all duration-300 hover:text-primary;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  /* Scroll animations */
   .fade-in {
     @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
   }
@@ -156,8 +250,54 @@
     @apply opacity-100 translate-y-0;
   }
   
-  /* Gradient text */
+  .slide-in-left {
+    @apply opacity-0 -translate-x-8 transition-all duration-700 ease-out;
+  }
+  
+  .slide-in-left.visible {
+    @apply opacity-100 translate-x-0;
+  }
+  
+  .slide-in-right {
+    @apply opacity-0 translate-x-8 transition-all duration-700 ease-out;
+  }
+  
+  .slide-in-right.visible {
+    @apply opacity-100 translate-x-0;
+  }
+  
+  /* Enhanced Gradient text with animation */
   .text-gradient {
     @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+    background-size: 300% 100%;
+    animation: gradient-shift 3s ease-in-out infinite;
+  }
+  
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  /* Pulse effect for interactive elements */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 5px hsl(var(--primary) / 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.6), 0 0 40px hsl(var(--primary) / 0.3);
+    }
+  }
+  
+  /* Magnetic effect for buttons */
+  .magnetic {
+    transition: transform 0.2s ease;
+  }
+  
+  .magnetic:hover {
+    transform: scale(1.02);
   }
 }

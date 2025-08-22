@@ -32,9 +32,9 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       scrolled 
-        ? 'bg-background/90 backdrop-blur-md border-b border-border/50' 
+        ? 'nav-glass' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
@@ -44,7 +44,7 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="text-xl font-mono font-bold text-gradient hover:scale-105 transition-transform"
           >
-            AT
+            DS
           </button>
 
           {/* Desktop Navigation */}
@@ -53,16 +53,15 @@ const Navigation = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-primary transition-colors duration-300 font-mono text-sm relative group"
+                className="nav-link font-mono text-sm"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
             <Button 
               onClick={() => scrollToSection('#contact')}
               variant="outline"
-              className="bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground font-mono"
+              className="magnetic bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground font-mono hover:shadow-[var(--glow-primary)] transition-all duration-300"
             >
               Hire Me
             </Button>
@@ -86,7 +85,7 @@ const Navigation = () => {
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-muted-foreground hover:text-primary transition-colors duration-300 font-mono text-sm py-2"
+                  className="block w-full text-left nav-link font-mono text-sm py-2"
                 >
                   {item.label}
                 </button>

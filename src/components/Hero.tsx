@@ -1,7 +1,11 @@
 import { ArrowRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+<<<<<<< HEAD
 // import ThreeBackground from './ThreeBackground'; // Remove this line
 import SplineBackground from './splineBackground.tsx';// Add this line
+=======
+import ThreeBackground from './ThreeBackground';
+>>>>>>> 23ee4a29f53468737246a575fdd367922dae1519
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -10,12 +14,18 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background/95 to-muted/20">
+<<<<<<< HEAD
      {
        
        `https://prod.spline.design/8v2XdJWHdNOAlwZZ/scene.splinecode`
      }
       
       <SplineBackground />
+=======
+      {/* 3D Background */}
+      <ThreeBackground />
+      
+>>>>>>> 23ee4a29f53468737246a575fdd367922dae1519
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]"></div>
 
