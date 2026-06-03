@@ -1,7 +1,6 @@
 import { ArrowRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-import SplineBackground from './SplineBackground';
 import ThreeBackground from './ThreeBackground';
 
 const Hero = () => {
@@ -11,8 +10,6 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background/95 to-muted/20">
-      <SplineBackground />
-
       {/* 3D Background */}
       <ThreeBackground />
 
