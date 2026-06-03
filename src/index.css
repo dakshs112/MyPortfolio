@@ -300,4 +300,29 @@
   .magnetic:hover {
     transform: scale(1.02);
   }
+
+  /* Subtle grid backdrop used across the site */
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(var(--primary) / 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.08) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* Radial glow used behind hero content */
+  .bg-hero-glow {
+    background:
+      radial-gradient(ellipse at 50% 30%, hsl(var(--primary) / 0.18) 0%, transparent 55%),
+      radial-gradient(ellipse at 70% 70%, hsl(var(--accent) / 0.15) 0%, transparent 60%);
+  }
+
+  /* Glassmorphic surface */
+  .glass {
+    @apply backdrop-blur-xl bg-background/40 border border-border/50;
+  }
+
+  /* Pulse glow animation used on the primary CTA */
+  .animate-pulse-glow {
+    animation: pulse-glow 2.4s ease-in-out infinite;
+  }
 }

@@ -74,7 +74,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-muted/20">
+    <section id="contact" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 fade-in">
