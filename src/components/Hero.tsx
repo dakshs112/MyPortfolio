@@ -66,8 +66,8 @@ const Hero = () => {
           className="flex items-center justify-center gap-5 mt-8 pointer-events-auto"
         >
           {[
-            { Icon: Github, href: "https://github.com/" },
-            { Icon: Linkedin, href: "https://linkedin.com/" },
+            { Icon: Github, href: "https://github.com/dakshs112" },
+            { Icon: Linkedin, href: "https://www.linkedin.com/in/dakshsharma112" },
             { Icon: Mail, href: "#contact" },
           ].map(({ Icon, href }, i) => (
             <a
