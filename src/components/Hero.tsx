@@ -1,71 +1,96 @@
-import { ArrowRight, Download } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-
-import SplineBackground from './SplineBackground';
-import ThreeBackground from './ThreeBackground';
+import { motion } from "framer-motion";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background/95 to-muted/20">
-      <SplineBackground />
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
+      <div className="absolute inset-0 bg-hero-glow pointer-events-none" />
 
-      {/* 3D Background */}
-      <ThreeBackground />
+      <div className="relative z-10 text-center px-6 max-w-4xl pointer-events-none">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="font-mono text-sm text-primary mb-4 tracking-widest uppercase"
+        >
+          {"// Backend Engineer"}
+        </motion.p>
 
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]"></div>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="text-6xl md:text-8xl font-bold tracking-tight mb-6"
+        >
+          Daksh <span className="text-gradient">Sharma</span>
+        </motion.h1>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-mono font-bold mb-6 text-gradient">
-            Daksh Sharma
-          </h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
+        >
+          Architecting scalable systems and elegant APIs. I build the invisible engines that power
+          modern products.
+        </motion.p>
 
-          <div className="text-xl md:text-2xl text-muted-foreground mb-4 font-mono">
-            <span className="text-primary">Backend Developer</span> | 
-            <span className="text-secondary"> Node.js</span> | 
-            <span className="text-accent"> Express</span> | 
-            <span className="text-primary"> MongoDB</span>
-          </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8 }}
+          className="flex items-center justify-center gap-4 pointer-events-auto"
+        >
+          <a
+            href="#projects"
+            className="px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:scale-105 transition-transform animate-pulse-glow"
+          >
+            View Work
+          </a>
+          <a
+            href="#contact"
+            className="px-6 py-3 rounded-full glass hover:bg-card transition-colors"
+          >
+            Get in touch
+          </a>
+        </motion.div>
 
-          <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Crafting robust, scalable backend solutions with modern technologies. 
-            Passionate about clean code, system design, and building APIs that power amazing experiences.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              onClick={scrollToContact}
-              className="btn-hero group magnetic"
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+          className="flex items-center justify-center gap-5 mt-8 pointer-events-auto"
+        >
+          {[
+            { Icon: Github, href: "https://github.com/dakshs112" },
+            { Icon: Linkedin, href: "https://www.linkedin.com/in/dakshsharma112" },
+            { Icon: Mail, href: "#contact" },
+          ].map(({ Icon, href }, i) => (
+            <a
+              key={i}
+              href={href}
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="social link"
             >
-              Contact Me
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-
-            <Button 
-              asChild
-              variant="outline" 
-              className="magnetic bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground font-mono px-8 py-4 hover:shadow-[var(--glow-primary)] transition-all duration-300"
-            >
-              <a href="https://daksh-backend-developer.tiiny.site/" target="_blank" rel="noreferrer">
-                <Download className="mr-2 w-5 h-5" />
-                Download CV
-              </a>
-            </Button>
-          </div>
-        </div>
-
-        {/* Enhanced Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer pulse-glow z-10">
-          <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center hover:border-secondary transition-colors duration-300">
-            <div className="w-1 h-3 bg-primary rounded-full mt-2"></div>
-          </div>
-        </div>
+              <Icon className="w-5 h-5" />
+            </a>
+          ))}
+        </motion.div>
       </div>
+
+      <motion.a
+        href="#about"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ repeat: Infinity, duration: 2 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground z-10"
+        aria-label="scroll down"
+      >
+        <ArrowDown className="w-5 h-5" />
+      </motion.a>
     </section>
   );
 };
