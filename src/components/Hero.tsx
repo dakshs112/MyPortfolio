@@ -47,12 +47,14 @@ const Hero = () => {
             </Button>
 
             <Button 
+              asChild
               variant="outline" 
-              className="magnetic bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground font-mono px-8 py-4 hover:shadow-[var(--glow-primary)] transition-all duration-400"
-              onClick={() => window.open('https://daksh-backend-developer.tiiny.site/', '_blank')}
+              className="magnetic bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground font-mono px-8 py-4 hover:shadow-[var(--glow-primary)] transition-all duration-300"
             >
-              <Download className="mr-2 w-5 h-5" />
-              Download CV
+              <a href="https://daksh-backend-developer.tiiny.site/" target="_blank" rel="noreferrer">
+                <Download className="mr-2 w-5 h-5" />
+                Download CV
+              </a>
             </Button>
           </div>
         </div>
