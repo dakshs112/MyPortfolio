@@ -71,7 +71,7 @@ const Footer = () => {
                 </a>
               </div>
               <p className="text-sm text-muted-foreground">
-                Open to new opportunities and collaborations
+                Open to new opportunities,collaborations and learnings.
               </p>
             </div>
           </div>

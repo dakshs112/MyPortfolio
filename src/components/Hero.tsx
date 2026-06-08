@@ -17,7 +17,7 @@ const Hero = () => {
           transition={{ delay: 0.2 }}
           className="font-mono text-sm text-primary mb-4 tracking-widest uppercase"
         >
-          {"// Backend Engineer"}
+          {" Backend Engineer"}
         </motion.p>
 
         <motion.h1
