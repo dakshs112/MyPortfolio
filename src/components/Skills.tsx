@@ -19,17 +19,17 @@ const Skills = () => {
     {
       title: "Databases",
       icon: <Database className="w-8 h-8 text-secondary" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "SQLite"]
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis"]
     },
     {
       title: "Programming Languages",
       icon: <Code2 className="w-8 h-8 text-accent" />,
-      skills: ["JavaScript", "TypeScript", "Python", "Go", "Bash"]
+      skills: ["JavaScript", "TypeScript", "Python", "C++"]
     },
     {
-      title: "Cloud & DevOps",
+      title: "Deployment & Services",
       icon: <Cloud className="w-8 h-8 text-primary" />,
-      skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "Nginx"]
+      skills: ["Vercel", "Docker", "Render", "Netlify", " Railways"]
     },
     {
       title: "Authentication & Security",
@@ -39,7 +39,7 @@ const Skills = () => {
     {
       title: "Tools & Version Control",
       icon: <GitBranch className="w-8 h-8 text-accent" />,
-      skills: ["Git", "GitHub", "GitLab", "Postman", "VS Code"]
+      skills: ["Git", "GitHub", "Postman", "VS Code"]
     },
     {
       title: "API Development",
@@ -49,7 +49,7 @@ const Skills = () => {
     {
       title: "Testing & Monitoring",
       icon: <Terminal className="w-8 h-8 text-secondary" />,
-      skills: ["Jest", "Mocha", "Chai", "Prometheus", "ELK Stack"]
+      skills: ["Jest", "Mocha", "Chai"]
     }
   ];
 

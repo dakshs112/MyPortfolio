@@ -4,17 +4,17 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce API",
-      description: "A comprehensive RESTful API for an e-commerce platform with user authentication, product management, shopping cart, and order processing. Built with Node.js, Express, and MongoDB.",
-      tech: ["Node.js", "Express", "MongoDB", "JWT", "Stripe API"],
-      github: "https://github.com/dakshs112/Product-catalogue-and-Orders-E-Commerce-",
+      title: "UShort-URL Shortner",
+      description: "A blazing-fast, analytics-powered URL shortener with real-time click tracking, custom aliases, and a stunning dark UI.",
+      tech: ["Node.js", "Express", "React", "JWT", "Redis"],
+      github: "https://github.com/dakshs112/ushort",
       demo: "product-catalogue-and-order-git-563827-dakshs112-1029s-projects.vercel.app"
     },
     {
-      title: "Real-time Chat System",
-      description: "A scalable real-time messaging application with WebSocket connections, message persistence, and user presence indicators. Features include private messaging and group chats.",
-      tech: ["Node.js", "Socket.io", "Redis", "PostgreSQL", "Docker"],
-      github: "https://github.com",
+      title: "NoteForge-Notes Generator ",
+      description: "NoteForge is a full-stack AI note generation platform that turns raw study material into polished, structured notes. Upload a PDF, paste text, or type a topic — then choose your format: summaries, Cornell notes, flashcards, Q&A pairs, or mind map outlines. Powered by streaming LLM responses, built with FastAPI, PostgreSQL, and Next.js.",
+      tech: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "Redis", "Claude API", "PyMuPDF", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/dakshs112/NoteForger",
       demo: "https://chat-demo.com"
     },
     {
