@@ -7,14 +7,14 @@ const Projects = () => {
       description: "A blazing-fast, analytics-powered URL shortener with real-time click tracking, custom aliases, and a stunning dark UI.",
       tech: ["Node.js", "Express", "React", "JWT", "Redis"],
       github: "https://github.com/dakshs112/ushort",
-      demo: "https://product-catalogue-and-order-git-563827-dakshs112-1029s-projects.vercel.app"
+      demo: "https://ushort-nyyly1dse-dakshs112-1029s-projects.vercel.app/"
     },
     {
       title: "NoteForge-Notes Generator ",
       description: "NoteForge is a full-stack AI note generation platform that turns raw study material into polished, structured notes. Upload a PDF, paste text, or type a topic — then choose your format: summaries, Cornell notes, flashcards, Q&A pairs, or mind map outlines. Powered by streaming LLM responses, built with FastAPI, PostgreSQL, and Next.js.",
       tech: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "Redis", "Claude API", "PyMuPDF", "Tailwind CSS", "Framer Motion"],
       github: "https://github.com/dakshs112/NoteForger",
-      demo: "https://noteforger.vercel.app"
+      demo: "https://note-forger-olive.vercel.app/login"
     },
     {
       title: "Task Management API",
