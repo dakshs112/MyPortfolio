@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Hero = () => {
   return (
@@ -52,7 +58,7 @@ const Hero = () => {
             View Work
           </a>
           <a
-            href="/resume.pdf"
+            href="/resume.docx"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full glass hover:bg-card transition-colors"
