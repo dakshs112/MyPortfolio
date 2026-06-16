@@ -1,7 +1,9 @@
 import { ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
-  const handleLinkClick = (url) => {
+  const handleLinkClick = (url, e) => {
+    e.preventDefault();
+    e.stopPropagation();
     window.open(url, '_blank');
   };
   const projects = [
@@ -79,21 +81,21 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-3 mt-auto relative z-10">
+                <div className="flex gap-3 mt-auto relative z-10 pointer-events-auto">
                   <button
                     type="button"
-                    onClick={() => handleLinkClick(project.github)}
-                    onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(project.github)}
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-md bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[var(--glow-primary)] active:scale-95 transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
+                    onClick={(e) => handleLinkClick(project.github, e)}
+                    onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(project.github, e)}
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-md bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[var(--glow-primary)] active:scale-95 transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background pointer-events-auto"
                   >
                     <Github className="w-4 h-4" />
                     Code
                   </button>
                   <button
                     type="button"
-                    onClick={() => handleLinkClick(project.demo)}
-                    onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(project.demo)}
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-md bg-secondary hover:bg-secondary/80 text-secondary-foreground hover:shadow-[var(--glow-secondary)] active:scale-95 transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-background"
+                    onClick={(e) => handleLinkClick(project.demo, e)}
+                    onKeyDown={(e) => e.key === 'Enter' && handleLinkClick(project.demo, e)}
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium rounded-md bg-secondary hover:bg-secondary/80 text-secondary-foreground hover:shadow-[var(--glow-secondary)] active:scale-95 transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-background pointer-events-auto"
                   >
                     <ExternalLink className="w-4 h-4" />
                     Demo

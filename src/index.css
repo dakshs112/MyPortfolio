@@ -205,16 +205,17 @@
     @apply bg-card border border-border rounded-xl p-6 relative overflow-hidden;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
+    pointer-events: auto;
   }
   
   .project-card::before {
     content: '';
-    @apply absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-accent/10 opacity-0 transition-opacity duration-500;
+    @apply absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-accent/10 opacity-0 transition-opacity duration-500 pointer-events-none;
   }
   
   .project-card:hover {
     @apply border-secondary/50 shadow-[var(--glow-secondary-strong)];
-    transform: translateY(-8px) rotateX(5deg) rotateY(5deg);
+    transform: translateY(-8px);
   }
   
   .project-card:hover::before {
