@@ -1,5 +1,4 @@
 import { ExternalLink, Github } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const projects = [
@@ -78,27 +77,24 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3 mt-auto">
-                  <Button 
-                    size="sm" 
-                    variant="outline"
-                    className="flex-1 magnetic bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[var(--glow-primary)] transition-all duration-300"
-                    asChild
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-md magnetic bg-transparent border border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[var(--glow-primary)] transition-all duration-300"
                   >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button 
-                    size="sm"
-                    className="flex-1 magnetic bg-secondary hover:bg-secondary/80 hover:shadow-[var(--glow-secondary)] transition-all duration-300"
-                    asChild
+                    <Github className="w-4 h-4" />
+                    Code
+                  </a>
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-md magnetic bg-secondary hover:bg-secondary/80 hover:shadow-[var(--glow-secondary)] transition-all duration-300"
                   >
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Demo
-                    </a>
-                  </Button>
+                    <ExternalLink className="w-4 h-4" />
+                    Demo
+                  </a>
                 </div>
               </div>
             ))}
