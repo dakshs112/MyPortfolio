@@ -52,10 +52,10 @@ const Hero = () => {
             View Work
           </a>
           <a
-            href="#contact"
+            href="resume.pdf"
             className="px-6 py-3 rounded-full glass hover:bg-card transition-colors"
           >
-            Get in touch
+            View Resume
           </a>
         </motion.div>
 
