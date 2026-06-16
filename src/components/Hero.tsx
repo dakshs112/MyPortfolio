@@ -52,7 +52,9 @@ const Hero = () => {
             View Work
           </a>
           <a
-            href="resume.pdf"
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-3 rounded-full glass hover:bg-card transition-colors"
           >
             View Resume

@@ -8,14 +8,14 @@ const Projects = () => {
       description: "A blazing-fast, analytics-powered URL shortener with real-time click tracking, custom aliases, and a stunning dark UI.",
       tech: ["Node.js", "Express", "React", "JWT", "Redis"],
       github: "https://github.com/dakshs112/ushort",
-      demo: "product-catalogue-and-order-git-563827-dakshs112-1029s-projects.vercel.app"
+      demo: "https://product-catalogue-and-order-git-563827-dakshs112-1029s-projects.vercel.app"
     },
     {
       title: "NoteForge-Notes Generator ",
       description: "NoteForge is a full-stack AI note generation platform that turns raw study material into polished, structured notes. Upload a PDF, paste text, or type a topic — then choose your format: summaries, Cornell notes, flashcards, Q&A pairs, or mind map outlines. Powered by streaming LLM responses, built with FastAPI, PostgreSQL, and Next.js.",
       tech: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "Redis", "Claude API", "PyMuPDF", "Tailwind CSS", "Framer Motion"],
       github: "https://github.com/dakshs112/NoteForger",
-      demo: "https://chat-demo.com"
+      demo: "https://noteforger.vercel.app"
     },
     {
       title: "Task Management API",
@@ -28,15 +28,15 @@ const Projects = () => {
       title: "Weather Data Aggregator",
       description: "A microservice that aggregates weather data from multiple APIs, processes and caches the information, and provides a unified interface for weather queries.",
       tech: ["Node.js", "Redis", "Docker", "REST APIs", "Cron Jobs"],
-      github: "https://github.com",
-      demo: "https://weather-demo.com"
+      github: "https://github.com/dakshs112/weather-aggregator",
+      demo: "https://weather-aggregator.onrender.com"
     },
     {
       title: "Authentication Service",
       description: "A secure authentication microservice with OAuth integration, JWT token management, password encryption, and role-based access control for multiple applications.",
       tech: ["Node.js", "Express", "bcrypt", "JWT", "OAuth2"],
-      github: "https://github.com",
-      demo: "https://auth-demo.com"
+      github: "https://github.com/dakshs112/auth-service",
+      demo: "https://auth-service.onrender.com"
     }
   ];
 
