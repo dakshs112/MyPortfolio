@@ -9,15 +9,41 @@ const Projects = () => {
   const projects = [
     {
       title: "UShort-URL Shortner",
-      description: "A blazing-fast, analytics-powered URL shortener with real-time click tracking, custom aliases, and a stunning dark UI.",
-      tech: ["Node.js", "Express", "React", "JWT", "Redis"],
+      description: "A distributed URL shortening platform featuring custom domains, analytics, OAuth authentication, RBAC, and real-time click tracking built with FastAPI, MongoDB, Redis, and Docker.",
+tech: [
+  "React.js",
+  "TypeScript",
+  "FastAPI",
+  "MongoDB",
+  "Redis",
+  "Docker",
+  "JWT",
+  "Google OAuth",
+  "RBAC",
+  "Event-Driven Architecture",
+  "Railway",
+  "Tailwind CSS"
+],
       github: "https://github.com/dakshs112/ushort",
       demo: "https://ushort-nyyly1dse-dakshs112-1029s-projects.vercel.app/"
     },
     {
       title: "NoteForge-Notes Generator ",
-      description: "NoteForge is a full-stack AI note generation platform that turns raw study material into polished, structured notes. Upload a PDF, paste text, or type a topic — then choose your format: summaries, Cornell notes, flashcards, Q&A pairs, or mind map outlines. Powered by streaming LLM responses, built with FastAPI, PostgreSQL, and Next.js.",
-      tech: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "Redis", "Claude API", "PyMuPDF", "Tailwind CSS", "Framer Motion"],
+      description: "An AI-powered study assistant that generates summaries, quizzes, flashcards, and study plans using LLaMA 3.3 70B, with secure authentication and document management workflows.",
+tech: [
+  "React.js",
+  "Node.js",
+  "Express.js",
+  "MongoDB Atlas",
+  "Groq API",
+  "LLaMA 3.3 70B",
+  "JWT",
+  "Bcrypt",
+  "REST APIs",
+  "MVC Architecture",
+  "Tailwind CSS",
+  "PDF Export"
+],
       github: "https://github.com/dakshs112/NoteForger",
       demo: "https://note-forger-olive.vercel.app/login"
     },
