@@ -48,25 +48,23 @@ tech: [
       demo: "https://note-forger-olive.vercel.app/login"
     },
     {
-      title: "Task Management API",
-      description: "A robust project management API with team collaboration features, task assignments, deadlines, and progress tracking. Includes role-based authentication and permissions.",
-      tech: ["Express.js", "MongoDB", "Node.js", "JWT", "Multer"],
-      github: "https://github.com/dakshs112/Task-Master",
-      demo: "https://taskbuddy-pw7o.onrender.com"
-    },
-    {
-      title: "Weather Data Aggregator",
-      description: "A microservice that aggregates weather data from multiple APIs, processes and caches the information, and provides a unified interface for weather queries.",
-      tech: ["Node.js", "Redis", "Docker", "REST APIs", "Cron Jobs"],
-      github: "https://github.com/dakshs112/weather-aggregator",
-      demo: "https://weather-aggregator.onrender.com"
-    },
-    {
-      title: "Authentication Service",
-      description: "A secure authentication microservice with OAuth integration, JWT token management, password encryption, and role-based access control for multiple applications.",
-      tech: ["Node.js", "Express", "bcrypt", "JWT", "OAuth2"],
-      github: "https://github.com/dakshs112/auth-service",
-      demo: "https://auth-service.onrender.com"
+      title: "Lucio Document Summarizer",
+      description: "Built a hybrid document intelligence platform that processed large legal document corpora using BM25 and FAISS-based retrieval, enabling source-grounded question answering, document summarization, and evidence extraction with page-level citations.",
+      tech: [
+"Python",
+"FastAPI",
+"PyMuPDF",
+"PDFPlumber",
+"Unstructured",
+"Sentence Transformers",
+"FAISS",
+"BM25",
+"NumPy",
+"Pandas",
+"AsyncIO",
+"HTTPX"
+],
+      github: "https://github.com/dakshs112/lucio_hackathon"
     }
   ];
 
