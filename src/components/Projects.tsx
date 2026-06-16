@@ -1,6 +1,9 @@
 import { ExternalLink, Github } from 'lucide-react';
 
 const Projects = () => {
+  const handleLinkClick = (url) => {
+    window.open(url, '_blank');
+  };
   const projects = [
     {
       title: "UShort-URL Shortner",
@@ -76,25 +79,21 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-3 mt-auto">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-md bg-transparent border border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[var(--glow-primary)] transition-all duration-300 pointer-events-auto cursor-pointer"
+                <div className="flex gap-3 mt-auto pointer-events-auto">
+                  <button
+                    onClick={() => handleLinkClick(project.github)}
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-md bg-transparent border border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[var(--glow-primary)] transition-all duration-300 cursor-pointer"
                   >
                     <Github className="w-4 h-4" />
                     Code
-                  </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-md bg-secondary hover:bg-secondary/80 hover:shadow-[var(--glow-secondary)] transition-all duration-300 pointer-events-auto cursor-pointer"
+                  </button>
+                  <button
+                    onClick={() => handleLinkClick(project.demo)}
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-md bg-secondary hover:bg-secondary/80 hover:shadow-[var(--glow-secondary)] transition-all duration-300 cursor-pointer"
                   >
                     <ExternalLink className="w-4 h-4" />
                     Demo
-                  </a>
+                  </button>
                 </div>
               </div>
             ))}
