@@ -81,7 +81,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-md magnetic bg-transparent border border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[var(--glow-primary)] transition-all duration-300"
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-md bg-transparent border border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[var(--glow-primary)] transition-all duration-300 pointer-events-auto cursor-pointer"
                   >
                     <Github className="w-4 h-4" />
                     Code
@@ -90,7 +90,7 @@ const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-md magnetic bg-secondary hover:bg-secondary/80 hover:shadow-[var(--glow-secondary)] transition-all duration-300"
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm rounded-md bg-secondary hover:bg-secondary/80 hover:shadow-[var(--glow-secondary)] transition-all duration-300 pointer-events-auto cursor-pointer"
                   >
                     <ExternalLink className="w-4 h-4" />
                     Demo
