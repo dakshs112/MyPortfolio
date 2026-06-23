@@ -23,7 +23,7 @@ const Hero = () => {
           transition={{ delay: 0.2 }}
           className="font-mono text-sm text-primary mb-4 tracking-widest uppercase"
         >
-          {" Backend Engineer"}
+          {" Full STack  Engineer"}
         </motion.p>
  
         <motion.h1
@@ -41,8 +41,7 @@ const Hero = () => {
           transition={{ delay: 0.6 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          Architecting scalable systems and elegant APIs. I build the invisible engines that power
-          modern products.
+          Building scalable web applications with modern visually appealing frontend frameworks, robust and optimized backend systems, and efficient databases.
         </motion.p>
 
         <motion.div

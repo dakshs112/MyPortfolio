@@ -78,8 +78,8 @@ tech: [
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent mx-auto mb-4"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Here are some of my recent backend projects that showcase my skills in API development, 
-              database design, and system architecture.
+              Here are some of my recent Full Stack  projects that showcase my skills in API development, 
+              database design,modular appealing frontend and system architecture.
             </p>
           </div>
 
