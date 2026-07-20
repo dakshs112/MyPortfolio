@@ -176,7 +176,7 @@ const ThreeBackground = () => {
       />
       <Canvas
         camera={{ position: [0, 0, 7], fov: 70 }}
-        style={{ background: 'transparent' }}
+        style={{ background: 'transparent', pointerEvents: 'none' }}
         dpr={[1, 2]}
         gl={{ antialias: true, alpha: true }}
       >
@@ -192,7 +192,7 @@ const ThreeBackground = () => {
 
       {/* Vignette */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 pointer-events-none"
         style={{
           background:
             'radial-gradient(ellipse at center, transparent 40%, hsl(240 70% 3% / 0.9) 100%)',
