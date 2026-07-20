@@ -23,7 +23,7 @@ const Hero = () => {
           transition={{ delay: 0.2 }}
           className="font-mono text-sm text-primary mb-4 tracking-widest uppercase"
         >
-          {" Full STack  Engineer"}
+          {"AI-Full Stack  Engineer"}
         </motion.p>
  
         <motion.h1
@@ -41,7 +41,7 @@ const Hero = () => {
           transition={{ delay: 0.6 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          Building scalable web applications with modern visually appealing frontend frameworks, robust and optimized backend systems, and efficient databases.
+    Full Stack and AI Engineer experienced in developing scalable web applications, RESTful APIs, and AI-powered solutions, with a strong focus on backend systems, data pipelines, and modern software architecture.
         </motion.p>
 
         <motion.div
@@ -57,7 +57,7 @@ const Hero = () => {
             View Work
           </a>
           <a
-            href="/resume.docx"
+            href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full glass hover:bg-card transition-colors"

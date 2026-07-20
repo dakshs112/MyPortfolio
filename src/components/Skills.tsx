@@ -12,47 +12,98 @@ import {
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Backend Technologies",
-      icon: <Server className="w-8 h-8 text-primary" />,
-      skills: ["Node.js", "Express.js", "Fastify", "NestJS", "Koa.js"]
-    },
-    {
-      title: "Databases",
-      icon: <Database className="w-8 h-8 text-secondary" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis"]
-    },
-    {
-      title: "Programming Languages",
-      icon: <Code2 className="w-8 h-8 text-accent" />,
-      skills: ["JavaScript", "TypeScript", "Python", "C++"]
-    },
-    {
-      title: "Deployment & Services",
-      icon: <Cloud className="w-8 h-8 text-primary" />,
-      skills: ["Vercel", "Docker", "Render", "Netlify", " Railways"]
-    },
-    {
-      title: "Authentication & Security",
-      icon: <Shield className="w-8 h-8 text-secondary" />,
-      skills: ["JWT", "OAuth2", "bcrypt", "Passport.js", "CORS"]
-    },
-    {
-      title: "Tools & Version Control",
-      icon: <GitBranch className="w-8 h-8 text-accent" />,
-      skills: ["Git", "GitHub", "Postman", "VS Code"]
-    },
-    {
-      title: "API Development",
-      icon: <Layers className="w-8 h-8 text-primary" />,
-      skills: ["REST APIs", "GraphQL", "WebSockets", "Swagger", "API Gateway"]
-    },
-    {
-      title: "Testing & Monitoring",
-      icon: <Terminal className="w-8 h-8 text-secondary" />,
-      skills: ["Jest", "Mocha", "Chai"]
-    }
-  ];
-
+      title: "AI Engineering",
+      icon: <Code2 className="w-8 h-8 text-primary" />,
+      skills: [
+      "LLM Applications",
+      "Retrieval-Augmented Generation (RAG)",
+      "Prompt Engineering",
+      "Data Ingestion Pipelines",
+      "Vector Embeddings",
+      "AI Workflows",
+      "FastAPI",
+      "REST APIs"
+    ]
+  },
+  {
+    title: "Frontend Development",
+    icon: <Layers className="w-8 h-8 text-accent" />,
+    skills: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "HTML5",
+      "CSS3"
+    ]
+  },
+  {
+    title: "Backend Development",
+    icon: <Server className="w-8 h-8 text-primary" />,
+    skills: [
+      "Node.js",
+      "Express.js",
+      "Fastify",
+      "NestJS",
+      "REST APIs",
+      "GraphQL",
+      "WebSockets"
+    ]
+  },
+  {
+    title: "Databases",
+    icon: <Database className="w-8 h-8 text-secondary" />,
+    skills: [
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "Redis"
+    ]
+  },
+  {
+    title: "Programming Languages",
+    icon: <Terminal className="w-8 h-8 text-accent" />,
+    skills: [
+      "Python",
+      "JavaScript",
+      "C++"
+    ]
+  },
+  {
+    title: "Cloud & Deployment",
+    icon: <Cloud className="w-8 h-8 text-primary" />,
+    skills: [
+      "Docker",
+      "Vercel",
+      "Render",
+      "Railway",
+      "Netlify"
+    ]
+  },
+  {
+    title: "Authentication & Security",
+    icon: <Shield className="w-8 h-8 text-secondary" />,
+    skills: [
+      "JWT",
+      "OAuth2",
+      "Passport.js",
+      "bcrypt",
+      "CORS"
+    ]
+  },
+  {
+    title: "Developer Tools",
+    icon: <GitBranch className="w-8 h-8 text-accent" />,
+    skills: [
+      "Git",
+      "GitHub",
+      "Postman",
+      "Swagger",
+      "VS Code"
+    ]
+  }
+];
   return (
     <section id="skills" className="py-20 bg-gradient-to-b from-muted/10 to-background">
       <div className="container mx-auto px-6">
